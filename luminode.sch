@@ -1,0 +1,229 @@
+EESchema Schematic File Version 2
+LIBS:power
+LIBS:device
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+EELAYER 25 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L LM317AEMP U?
+U 1 1 583E1050
+P 2700 1150
+F 0 "U?" H 2500 1350 50  0000 C CNN
+F 1 "LM317AEMP" H 2700 1350 50  0000 L CNN
+F 2 "SOT-223" H 2700 1250 50  0000 C CIN
+F 3 "" H 2700 1150 50  0000 C CNN
+	1    2700 1150
+	1    0    0    -1  
+$EndComp
+$Comp
+L +12V #PWR?
+U 1 1 583E1107
+P 5600 800
+F 0 "#PWR?" H 5600 650 50  0001 C CNN
+F 1 "+12V" H 5600 940 50  0000 C CNN
+F 2 "" H 5600 800 50  0000 C CNN
+F 3 "" H 5600 800 50  0000 C CNN
+	1    5600 800 
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR?
+U 1 1 583E1129
+P 5250 950
+F 0 "#PWR?" H 5250 700 50  0001 C CNN
+F 1 "GND" H 5250 800 50  0000 C CNN
+F 2 "" H 5250 950 50  0000 C CNN
+F 3 "" H 5250 950 50  0000 C CNN
+	1    5250 950 
+	1    0    0    -1  
+$EndComp
+$Comp
+L +3V3 #PWR?
+U 1 1 583E113F
+P 6000 800
+F 0 "#PWR?" H 6000 650 50  0001 C CNN
+F 1 "+3V3" H 6000 940 50  0000 C CNN
+F 2 "" H 6000 800 50  0000 C CNN
+F 3 "" H 6000 800 50  0000 C CNN
+	1    6000 800 
+	1    0    0    -1  
+$EndComp
+$Comp
+L PWR_FLAG #FLG?
+U 1 1 583E11C8
+P 5250 850
+F 0 "#FLG?" H 5250 945 50  0001 C CNN
+F 1 "PWR_FLAG" H 5250 1030 50  0000 C CNN
+F 2 "" H 5250 850 50  0000 C CNN
+F 3 "" H 5250 850 50  0000 C CNN
+	1    5250 850 
+	1    0    0    -1  
+$EndComp
+$Comp
+L PWR_FLAG #FLG?
+U 1 1 583E11DD
+P 5600 950
+F 0 "#FLG?" H 5600 1045 50  0001 C CNN
+F 1 "PWR_FLAG" H 5600 1130 50  0000 C CNN
+F 2 "" H 5600 950 50  0000 C CNN
+F 3 "" H 5600 950 50  0000 C CNN
+	1    5600 950 
+	-1   0    0    1   
+$EndComp
+$Comp
+L PWR_FLAG #FLG?
+U 1 1 583E11EC
+P 6000 950
+F 0 "#FLG?" H 6000 1045 50  0001 C CNN
+F 1 "PWR_FLAG" H 6000 1130 50  0000 C CNN
+F 2 "" H 6000 950 50  0000 C CNN
+F 3 "" H 6000 950 50  0000 C CNN
+	1    6000 950 
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	6000 950  6000 800 
+Wire Wire Line
+	5600 950  5600 800 
+Wire Wire Line
+	5250 950  5250 850 
+$Comp
+L R R?
+U 1 1 583E1254
+P 3350 1350
+F 0 "R?" V 3430 1350 50  0000 C CNN
+F 1 "470" V 3350 1350 50  0000 C CNN
+F 2 "" V 3280 1350 50  0000 C CNN
+F 3 "" H 3350 1350 50  0000 C CNN
+	1    3350 1350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3350 1200 3350 1100
+$Comp
+L R R?
+U 1 1 583E12BA
+P 3350 1750
+F 0 "R?" V 3430 1750 50  0000 C CNN
+F 1 "771" V 3350 1750 50  0000 C CNN
+F 2 "" V 3280 1750 50  0000 C CNN
+F 3 "" H 3350 1750 50  0000 C CNN
+	1    3350 1750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3350 1600 3350 1500
+Wire Wire Line
+	3350 1550 2700 1550
+Wire Wire Line
+	2700 1550 2700 1400
+Connection ~ 3350 1550
+$Comp
+L GND #PWR?
+U 1 1 583E1313
+P 3350 2000
+F 0 "#PWR?" H 3350 1750 50  0001 C CNN
+F 1 "GND" H 3350 1850 50  0000 C CNN
+F 2 "" H 3350 2000 50  0000 C CNN
+F 3 "" H 3350 2000 50  0000 C CNN
+	1    3350 2000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3350 2000 3350 1900
+Wire Wire Line
+	2300 1100 1950 1100
+Connection ~ 3350 1100
+Text Label 1950 1100 0    60   ~ 0
++12V
+Text Label 5600 850  0    60   ~ 0
++12V
+Text Label 6000 850  0    60   ~ 0
++3V3
+Text Label 3600 1100 0    60   ~ 0
++3V3
+Wire Wire Line
+	3100 1100 3600 1100
+$Comp
+L BARREL_JACK CON?
+U 1 1 583E16C7
+P 1250 1700
+F 0 "CON?" H 1250 1950 50  0000 C CNN
+F 1 "BARREL_JACK" H 1250 1500 50  0000 C CNN
+F 2 "" H 1250 1700 50  0000 C CNN
+F 3 "" H 1250 1700 50  0000 C CNN
+	1    1250 1700
+	1    0    0    -1  
+$EndComp
+$Comp
+L +12V #PWR?
+U 1 1 583E17AA
+P 1750 1500
+F 0 "#PWR?" H 1750 1350 50  0001 C CNN
+F 1 "+12V" H 1750 1640 50  0000 C CNN
+F 2 "" H 1750 1500 50  0000 C CNN
+F 3 "" H 1750 1500 50  0000 C CNN
+	1    1750 1500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1550 1600 1750 1600
+Wire Wire Line
+	1750 1600 1750 1500
+$Comp
+L GND #PWR?
+U 1 1 583E17F0
+P 1750 1850
+F 0 "#PWR?" H 1750 1600 50  0001 C CNN
+F 1 "GND" H 1750 1700 50  0000 C CNN
+F 2 "" H 1750 1850 50  0000 C CNN
+F 3 "" H 1750 1850 50  0000 C CNN
+	1    1750 1850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1750 1700 1750 1850
+Wire Wire Line
+	1750 1800 1550 1800
+Wire Wire Line
+	1750 1700 1550 1700
+Connection ~ 1750 1800
+$EndSCHEMATC
