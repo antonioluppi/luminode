@@ -1,4 +1,4 @@
-# paviboard
+# luminode
 a wireless multi lamp controller
 
 todo list:
