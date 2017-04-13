@@ -1,0 +1,13 @@
+http://www.esp8266.com/wiki/doku.php?id=getting-started-with-the-esp8266
+https://nodemcu.readthedocs.io/en/master
+https://github.com/espressif/esptool
+
+Putting Device Into Flash Mode
+To enable ESP8266 firmware flashing GPIO0 pin must be pulled low before the device is reset. Conversely, for a normal boot, GPIO0 must be pulled high or floating.
+
+If you have a NodeMCU dev kit then you don't need to do anything, as the USB connection can pull GPIO0 low by asserting DTR and reset your board by asserting RTS.
+
+If you have an ESP-01 or other device without built-in USB, you will need to enable flashing yourself by pulling GPIO0 low or pressing a "flash" switch, while powering up or resetting the module.
+
+https://cdn-shop.adafruit.com/product-files/2471/0A-ESP8266__Datasheet__EN_v4.3.pdf
+https://en.wikipedia.org/wiki/ESP8266
